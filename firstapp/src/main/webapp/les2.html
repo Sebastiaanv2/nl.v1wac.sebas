@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Dynamic Example</title>
+    <link rel="stylesheet" type="text/css" href="CSS/les2.css">
+</head>
+<body>
+<h2>Welkom hier kunt u uw naam en rekensom invullen</h2>
+<form action="DynamicServlet.do" method="get">
+    <div>
+        <label>naam</label><input type="text" name="username">
+        <label>cijfer 1</label><input type="number" name="cijfer1">
+        <label>cijfer 2</label><input type="number" name="cijfer2">
+        <input type="submit" name="modifier" value="+">
+        <input type="submit" name="modifier" value="-">
+        <input type="submit" name="modifier" value="/">
+        <input type="submit" name="modifier" value="*">
+    </div>
+</form>
+</body>
+</html>

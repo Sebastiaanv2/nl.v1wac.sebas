@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Les5</title>
+    <link rel="stylesheet" type="text/css" href="CSS/les5.css">
+    <script src="JS/les5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+</head>
+<body onload="initPage()">
+
+<div id="frame">
+    <div id="myLocation">
+        <h1>Mijn Locatie</h1>
+        <!--<label>Landcode:</label>
+        <label id="landcode"></label>
+        <br>
+        <label>Land:</label>
+        <label id="land"></label>
+        <br>
+        <label>Regio:</label>
+        <label id="regio"></label>
+        <br>
+        <label>Stad:</label>
+        <label id="stad"></label>
+        <br>
+        <label>Postcode:</label>
+        <label id="postcode"></label>
+        <br>
+        <label>Latitude:</label>
+        <label id="latitude"></label>
+        <br>
+        <label>Longitude:</label>
+        <label id="longitude"></label>
+        <br>
+        <label>IP:</label>
+        <label id="IP"></label>-->
+        <table id="myLocationTable">
+            <tr>
+                <td>Landcode:</td>
+                <td id="landcode"></td>
+            </tr>
+            <tr>
+                <td>Land:</td>
+                <td id="land"></td>
+            </tr>
+            <tr>
+                <td>Regio:</td>
+                <td id="regio"></td>
+            </tr>
+            <tr>
+                <td>Stad:</td>
+                <td id="stad"></td>
+            </tr>
+            <tr>
+                <td>Postcode:</td>
+                <td id="postcode"></td>
+            </tr>
+            <tr>
+                <td>Latitude:</td>
+                <td id="latitude"></td>
+            </tr>
+            <tr>
+                <td>Longitude:</td>
+                <td id="longitude"></td>
+            </tr>
+            <tr>
+                <td>IP:</td>
+                <td id="IP"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="weatherInfo">
+        <h1 id="weerheader"></h1>
+        <table id="myWeatherInfo">
+            <tr>
+                <td>Temperatuur:</td>
+                <td id="temp"></td>
+            </tr>
+            <tr>
+                <td>Luchtvochtigheid:</td>
+                <td id="lv"></td>
+            </tr>
+            <tr>
+                <td>Windsnelheid:</td>
+                <td id="ws"></td>
+            </tr>
+            <tr>
+                <td>Windrichting:</td>
+                <td id="wr"></td>
+            </tr>
+            <tr>
+                <td>Zonsopgang:</td>
+                <td id="zop"></td>
+            </tr>
+            <tr>
+                <td>Zonsondergang:</td>
+                <td id="zon"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="countryList">
+        <h1>Beschikbare vakantiebestemmingen</h1>
+        <table id="myCountryList">
+            <tr>
+                <th>Land</th>
+                <th>Hoofdstad</th>
+                <th>Regio</th>
+                <th>Oppervlakte</th>
+                <th>Inwoners</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

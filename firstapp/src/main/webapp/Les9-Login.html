@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form id="loginform">
+    <label>Username:    </label><input type="text" name="username"/><br>
+    <label>Password:    </label><input type="password" name="password"/><br>
+
+    <input type="button" value="login" id="login"/>
+</form>
+<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script>
+    $("#login").click(function (event) {
+        var data = $("#loginform").serialize();
+
+        $.post("restservices/authentication", data, function (response) {
+            window.sessionStorage.setItem("sessionToken", response);
+            window.location.href("Les8.html");
+            console.log(response);
+        }).fail(function (jqXHR, textStatus, errorThrown) {
+            console.log(textStatus);
+            console.log(errorThrown);
+        });
+    });
+</script>
+</body>
+</html>

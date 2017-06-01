@@ -1,0 +1,74 @@
+body {
+    background-color: #d7d5cd;
+}
+
+h1 {
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    color: #ffffff;
+    background-color: #a0998d;
+}
+
+th {
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #d7d5cd;
+}
+
+table {
+    overflow-x: auto;
+}
+
+#frame {
+    display: grid;
+    grid-template-areas: "myLocation" "weatherInfo" "countryList";
+}
+
+#myLocation {
+    grid-area: myLocation;
+    display: block;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#stad:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#weatherInfo {
+    grid-area: weatherInfo;
+}
+
+#myCountryList
+{
+    padding: 5px;
+    width: 100%;
+    background-color: #b1ada5;
+}
+
+#countryList {
+    grid-area: countryList;
+}
+
+@media screen and (min-width: 700px) {
+    #frame {
+        display: grid;
+        grid-template-areas: "myLocation weatherInfo" "countryList countryList";
+    }
+
+    #weatherInfo {
+        grid-area: weatherInfo;
+        margin-left: 25px;
+    }
+
+    #countryList {
+        grid-area: countryList;
+    }
+}
+

@@ -1,0 +1,22 @@
+div.frame {
+    background-color: gray;
+    margin: 1em;
+    padding: 0.5em;
+    text-align: center;
+    width: 13.5em;
+}
+
+#d{
+    background-color: white;
+    height: 2em;
+    margin: 0.5em;
+    padding-right: 0.3em;
+    text-align: right;
+    width: 190px;
+}
+
+.btn {
+    height: 3.5em;
+    margin-bottom: 0.3em;
+    width: 3.5em;
+}
