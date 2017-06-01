@@ -19,7 +19,7 @@ public class WorldResource {
     private WorldService service = ServiceProvider.getWorldService();
 
     @GET
-    @RolesAllowed("admin")
+    @RolesAllowed({"user", "admin"})
     @Produces(MediaType.APPLICATION_JSON)
     public String getCountries() {
         System.out.println("WorldResource/getCountries");
