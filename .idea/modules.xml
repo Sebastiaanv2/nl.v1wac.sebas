@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/nl.v1wac.sebas.iml" filepath="$PROJECT_DIR$/.idea/nl.v1wac.sebas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firstapp.iml" filepath="$PROJECT_DIR$/firstapp.iml" />
     </modules>
   </component>
 </project>
