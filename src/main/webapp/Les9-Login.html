@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+
 </head>
 <body>
 <form id="loginform">
@@ -18,7 +19,7 @@
 
         $.post("restservices/authentication", data, function (response) {
             window.sessionStorage.setItem("sessionToken", response);
-            window.location.href("Les8.html");
+            window.location.href = "Les8.html";
             console.log(response);
         }).fail(function (jqXHR, textStatus, errorThrown) {
             console.log(textStatus);

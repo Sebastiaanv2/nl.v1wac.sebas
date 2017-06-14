@@ -56,7 +56,6 @@ public class WorldResource {
         return Response.ok().build();
     }
 
-
     @GET
     @RolesAllowed({"user", "admin"})
     @Path("/largestsurfaces")
@@ -72,7 +71,6 @@ public class WorldResource {
         return jab.build().toString();
     }
 
-
     @GET
     @Path("/largestpopulations")
     @Produces(MediaType.APPLICATION_JSON)
@@ -87,7 +85,6 @@ public class WorldResource {
 
         return jab.build().toString();
     }
-
 
     @GET
     @Path("/{code}")
